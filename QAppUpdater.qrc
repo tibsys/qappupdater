@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/i18n">
+        <file alias="QAppUpdater_fr">i18n/QAppUpdater_fr.qm</file>
+    </qresource>
+</RCC>
