@@ -43,15 +43,6 @@ linux-g++:CONFIG += staticlib
 linux-g++-64:CONFIG += staticlib
 linux-clang:CONFIG += staticlib
 
-#Define a temporary path for build
-
-macx {
-    #macx:OBJECTS_DIR = /Volumes/ramdisk/compilation/QAppUpdater
-    macx:MOC_DIR = $${OBJECTS_DIR}
-    macx:RCC_DIR = $${OBJECTS_DIR}
-    macx:UI_DIR = $${OBJECTS_DIR}
-}
-
 unix:QMAKE_CXXFLAGS += -Wno-write-strings -pipe
 linux-g++:QMAKE_CXXFLAGS_RELEASE += -ggdb
 linux-g++:QMAKE_CFLAGS_RELEASE += -ggdb
